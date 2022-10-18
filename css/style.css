@@ -11,14 +11,147 @@
     margin: 0;
     font-family:'DungGeunMo';
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
     color: #666;
     list-style: none;
 }
+*::selection {
+    background-color: #F52D75;
+    color: #FFF9F9;
+}
+
+body {
+    background: #FFF9F9;
+}
+body::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: #FF9BAD;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+    background: #FFF9F9;
+}
+
+.content-box {
+    width: 990px;
+    margin: 0 auto;
+    height: 800px;
+    border: 1px solid #F52D75;
+    border-radius: 10px;
+    background: #FFFFFF;
+    overflow: hidden;
+    
+}
+.box-a {
+    width: 880px;
+    padding: 50px;
+    height: 650px;
+    overflow: auto;
+}
+.box-a > div {
+    padding: 30px 0;
+}
+.box-a::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: #FF9BAD;
+    border-radius: 10px;
+}
+.box-a::-webkit-scrollbar {
+    width: 5px;
+}
+.sub-title {
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    background: #FF9BAD;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+.sub-title > h6 {
+    color: #FFF5E5;
+}
+
+/* //common */
+
 #wrap {
     width: 1500px;
     margin: 0 auto;
 }
 #home {
     height: 1080px;
+    position: relative;
 }
+#home .txt-Area {
+    width: 990px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #FF9BAD;
+    text-align: center;
+    border: 1px solid #F52D75;
+    border-radius: 30px 0 30px 0;
+}
+#home .txt-Area .txt-desc {
+    width: 800px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+#home .txt-Area h1 {
+    font-size: 60px;
+    padding: 10px;
+    color: #FFF5E5;
+    line-height: 70px;
+}
+#home .txt-Area a {
+    display: block;
+    font-size: 28px;
+    color: #FFF5E5;
+    padding: 20px;
+}
+
+#about {
+    width: 990px;
+    margin: 0 auto;
+}
+
+/* About - Skill-Area */
+.skill-Area ul {
+    display: inline;
+}
+.skill-Area li {
+    display: inline;
+    padding: 10px;
+}
+.skill-Area span {
+    width: 50px;
+    text-align: center;
+}
+.skill-Area progress {
+    margin: 0 10px;
+    
+}
+.de-Tool,.web-Tool {
+    width: 300px;
+}
+progress {
+    -webkit-appearance: none;
+  }
+
+::-webkit-progress-bar {
+    width: 200px;
+    background-color: #FFFFFF;
+    border: 1px solid #FF9BAD;
+    border-radius: 10px;
+    padding: 1px;
+  }
+  
+::-webkit-progress-value {
+    background-color: #FF9BAD;
+    border-radius: 10px;
+  }
